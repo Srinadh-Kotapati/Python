@@ -1,4 +1,4 @@
-'''Name = input("Enter your name")
+Name = input("Enter your name")
 Age = int(input("Enter your age"))
 print("Hello"+ Name + ", you are a minor" if Age< 18 else "Hello" + Name +  ",You are an Adult")
 
@@ -78,7 +78,7 @@ for value in d.values():
     print(value)
 for key,value in d.items():
     print(f"{key}:{value}")
-    '''
+    
 
 
     
