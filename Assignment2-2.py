@@ -1,0 +1,6 @@
+a = list(map(int, input("Enter Numbers: ").split()))
+print(a)
+a.sort()
+print(a)
+print("Maximum :" + str(a[-1]))
+print("Minimum :"+str(a[0]))
