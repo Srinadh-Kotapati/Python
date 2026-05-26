@@ -1,5 +1,5 @@
 #Largest number using loops
-'''
+
 arr = list(map(int,input().split()))
 print(arr)
 for i in range(len(arr)-1):
@@ -104,11 +104,11 @@ s = 0
 for i in a:
     s =  s+i
 print(i)    
-'''
+
 
 a = [1,3,0,4,7,0,5,0,3,1]
 for i in range(0,len(a)):
-    for j in range (0,len(a)-1):
+    for j in range (0,len(a)-1):                  
         if a[j] == 0:
             a[j],a[j+1] = a[j+1],a[j]
 print(a)
