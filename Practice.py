@@ -96,7 +96,7 @@ for i in a:
     if i not in s:
         s.append(i)
 print(s)
-'''
+
         
 #Find sum of list elements.
 a = [8,7,4,5,2,7,3,5,6,8,4,3]
@@ -104,7 +104,14 @@ s = 0
 for i in a:
     s =  s+i
 print(i)    
+'''
 
+a = [1,3,0,4,7,0,5,0,3,1]
+for i in range(0,len(a)):
+    for j in range (0,len(a)-1):
+        if a[j] == 0:
+            a[j],a[j+1] = a[j+1],a[j]
+print(a)
 
 
 
