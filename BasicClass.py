@@ -17,6 +17,7 @@ display student details
 Extra:
 
 Create multiple student objects.
+'''
 
 class Student:
     def __init__(self,name,roll_number,sub1,sub2,sub3):
@@ -47,7 +48,7 @@ class Student:
         self.avg = (sub1+sub2+sub3)/3
         print(self.avg)
     def grade(self):
-        switch 
+        
         
 obj = Student("srinadh",23)
 obj.calling()
@@ -88,7 +89,7 @@ obj = Student("srinadh", 23)
 obj.calling()
 
 
-
+'''
 
 Problem 3: Rectangle Calculator
 
@@ -102,15 +103,16 @@ perimeter()
 Create different rectangle objects.
 '''
 
+
 class rectangle:
-    '''
+    
     def __init__(self):
     
         self.l = 0
         self.w = 0
         self.area = 0
         self.perimeter = 0
-        '''
+        
     def Area(self):
         self.l = int(input("Enter length of rectangle:"))
         self.w = int(input("Enter width of rectangle:")) 
@@ -122,6 +124,8 @@ class rectangle:
 obj = rectangle()
 obj.Area()
 obj.Perimeter()
+
+
 
 
 

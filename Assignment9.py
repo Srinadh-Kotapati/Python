@@ -1,5 +1,4 @@
 #Create a lambda function to find the square of a number
-'''
 square = lambda x:x*x
 print(square(5))
 
@@ -92,7 +91,6 @@ from functools import reduce
 l = [250,150,100]
 r = reduce(lambda x,y:x+y,l)
 print(r)
-'''
 
 #Given a list of numbers:
 #* First filter even numbers.......* Then square them using map()

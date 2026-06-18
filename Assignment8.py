@@ -4,7 +4,7 @@
 #* Minimum value
 #* Sum of elements
 #* Length of the list
-'''
+
 l = list(map(int,input("Enter elements").split()[:6]))
 print(l)
 print(max(l))
@@ -94,7 +94,7 @@ def palindrone(n):
     else:
         return False
 print(palindrone("madam"))
-'''
+
 
 #Write a recursive function to find factorial.
 def factorial(n):

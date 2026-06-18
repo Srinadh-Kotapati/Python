@@ -1,5 +1,5 @@
 #Largest number using loops
-
+'''
 arr = list(map(int,input().split()))
 print(arr)
 for i in range(len(arr)-1):
@@ -112,6 +112,13 @@ for i in range(0,len(a)):
         if a[j] == 0:
             a[j],a[j+1] = a[j+1],a[j]
 print(a)
+'''
+
+#Rotating an array by K elements
+a = [2,3,4,5,6,7,8]
+K = 4
+s = a[K:] + a[:K]
+print(s)
 
 
 

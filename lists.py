@@ -62,13 +62,55 @@ for i in a:
 
 print(f"union {c}")
 print(f"intersection {set(d)}")
-'''
+
 
 # [1, 2, 3, 4, 5].....Output: [5, 1, 2, 3, 4]
 l = [1,2,3,4,5,6]
 for i in range(0,len(l)-1):
-    i = i+1
+    l[i] = l[i+1]
 print(l)
+'''
+
+# Function to check whether any pair exists
+# whose sum is equal to the given target value
+class Two_sum:
+    def two_sum(self,arr, target):
+     sum = 0
+    # Sort the array
+    
+
+     left, right = 0, len(arr) - 1
+
+    # Iterate while left pointer is less than right
+     while left < right:
+
+        sum = arr[left] + arr[right]
+
+
+        # Check if the sum matches the target
+        if sum == target:
+           return arr[left],arr[right]
+            
+        elif sum < target: 
+            left += 1  # Move left pointer to the right
+        else:
+            right -= 1 # Move right pointer to the left
+
+    # If no pair is found
+     return False
+
+arr = list(map(int,input("Enter numbers").split()))
+target = 7
+
+obj = Two_sum()
+result =obj.two_sum(arr,target)
+if result:
+   print(result)
+else:
+   print("No pair")
+
+
+
 
 
 
