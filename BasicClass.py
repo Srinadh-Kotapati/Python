@@ -48,9 +48,7 @@ class Student:
         self.avg = (sub1+sub2+sub3)/3
         print(self.avg)
     def grade(self):
-        
-        
-obj = Student("srinadh",23)
+        obj = Student("srinadh",23)
 obj.calling()
 
 

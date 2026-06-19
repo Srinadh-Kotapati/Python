@@ -1,4 +1,4 @@
-'''
+
 class Student:
     def __init__(self,Student_ID,Student_Name,Course,Course_Fee):
         self.Student_ID = Student_ID
@@ -100,37 +100,37 @@ class Order:
         return self.Quantity * self.Price_per_Item
     
 print("Order Details   ")    
-Order1 = Order(1,"Srinadh","Printed T-shirt",2,450)
+Order1 = Order("p101","Srinadh","Printed T-shirt",2,450)
 Order1.display_order()
 Total_Amount = Order1.calculate_total()
 print("Total Amount :", Total_Amount)
 print(                                 )
 
-Order2 = Order(2,"Vamsi","Checks Shirt",3,4550)
+Order2 = Order("p102","Vamsi","Checks Shirt",3,4550)
 Order2.display_order()
 Total_Amount = Order2.calculate_total()
 print("Total Amount :", Total_Amount)
 print(                                 )
 
-Order3 = Order(3,"Vijay","T-shirt",2,750)
+Order3 = Order("p103","Vijay","T-shirt",2,750)
 Order3.display_order()
 Total_Amount = Order3.calculate_total()
 print("Total Amount :", Total_Amount)
 print(                                 )
 
-Order4 = Order(4,"Tarak","Jeans Pant",1,2350)
+Order4 = Order("p104","Tarak","Jeans Pant",1,2350)
 Order4.display_order()
 Total_Amount = Order4.calculate_total()
 print("Total Amount :", Total_Amount)
 print(                                 )
 
-Order5 = Order(5,"vara","chinos",4,550)
+Order5 = Order("p105","vara","chinos",4,550)
 Order5.display_order()
 Total_Amount = Order5.calculate_total()
 print("Total Amount :", Total_Amount)
 print(                                 )
 
-'''
+
 
 
 class Patient:
@@ -181,6 +181,68 @@ Patient5.display_patient()
 Fee = Patient5.display_fee()
 print("Cosultation Fee :", Fee)
 print(                       )
+
+
+
+class HotelBooking:
+    def __init__(self,Booking_ID,Customer_Name,Room_Type,Number_of_Days,Rent_Per_Day):
+        self.Booking_ID = Booking_ID
+        self.Customer_Name = Customer_Name
+        self.Room_Type = Room_Type
+        self.Number_of_Days = Number_of_Days
+        self.Rent_Per_Day = Rent_Per_Day
+
+    def display_Booking(self):
+        print("Booking ID :",self.Booking_ID)
+        print("Customer Name :",self.Customer_Name)
+        print("Room Type :",self.Room_Type)
+        print("Number of Days :",self.Number_of_Days)
+        print("Rent Per Days :",self.Rent_Per_Day)
+
+    def calculate_Bill(self):
+        return self.Number_of_Days * self.Rent_Per_Day
+    
+print("Booking Details    ")
+Customer1 = HotelBooking("R101","Ben","Luxury",2,3000)
+Customer1.display_Booking()
+Total_Bill = Customer1.calculate_Bill()
+print("Total Bill :",Total_Bill)
+print(                       )
+
+Customer2 = HotelBooking("R102","Benjamen","Ordinary",3,1500)
+Customer2.display_Booking()
+Total_Bill = Customer2.calculate_Bill()
+print("Total Bill :",Total_Bill)
+print(                       )
+
+
+Customer3 = HotelBooking("R103","Denver","Premium",2,2000)
+Customer3.display_Booking()
+Total_Bill = Customer3.calculate_Bill()
+print("Total Bill :",Total_Bill)
+print(                       )
+
+
+Customer4 = HotelBooking("R104","Tokyo","Ordinary",5,1000)
+Customer4.display_Booking()
+Total_Bill = Customer4.calculate_Bill()
+print("Total Bill :",Total_Bill)
+print(                       )
+
+
+Customer5 = HotelBooking("R105","Nick","Luxury",2,3000)
+Customer5.display_Booking()
+Total_Bill = Customer5.calculate_Bill()
+print("Total Bill :",Total_Bill)
+print(                       )
+
+
+
+        
+
+
+
+
         
         
 
